@@ -108,7 +108,8 @@ section {
     background-color: lightskyblue;
 }
 
-.jumbo-frame {
+.jumbo-frame,
+.footer-frame {
     margin: 0 auto;
     width: 82%;
 }
@@ -179,4 +180,10 @@ section.companies {
 .col-half img {
     vertical-align: middle;
     width: 50%;
+}
+
+/* FOOTER */
+.footer-frame .col {
+    margin-right: 2em;
+    width: calc(20% - 2em);
 }
