@@ -10,15 +10,50 @@ html {
     font-family: "Open Sans", sans-serif;
 }
 
+/* COMMON */
 img {
     width: 100%;
 }
 
-/* COMMON */
+ul {
+    
+    /* list-style: none; */
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    border: 2px solid rgb(39, 77, 1);
+}
+
+p {
+    border: 2px solid yellow;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    border: 2px solid magenta;
+}
+
+section {
+    border: 3px solid lightgreen;
+}
+
+.btn {
+    border: 2px solid red;
+}
+
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
+}
+
+.container {
+    margin: 6em auto 0;
+    width: 66%;
+    border: 2px solid darkorange;
 }
 
 .col {
@@ -41,6 +76,9 @@ img {
 .header .col.logo {
     padding-left: .5em;
     width: 9%;
+}
+
+.logo img {
     vertical-align: middle;
 }
 
@@ -52,28 +90,36 @@ img {
     width: 50%;
 }
 
+.header li {
+    display: inline-block;
+    margin-left: 2em;
+    line-height: 2em;
+    font-size: .75em;
+}
+
+.links02 {
+    text-align: right;
+}
+
 /* JUMBOTRON */
 .jumbotron {
     padding-top: 90px;
     width: 100%;
-    background-color: blueviolet;
+    background-color: lightskyblue;
 }
 
 .jumbo-frame {
     margin: 0 auto;
     width: 82%;
-    height: 760px;
-    background-color: bisque;
 }
 
 .jumbo-frame h1 {
     width: 100%;
-    height: 250px;
     border: 2px solid fuchsia;
 }
 
 .jumbo-frame .col {
-    height: 510px
+
 }
 
 .col.jumbo-text {
@@ -82,4 +128,55 @@ img {
 
 .col.jumbo-img-frame {
     width: 60%;
+}
+
+/* MAIN */
+/* PLANS */
+.col-side,
+.col-center{
+    width:30%;
+}
+
+.col-center {
+    margin: 0 5%;
+}
+
+.col.enterprise {
+    width: 70%;
+}
+
+.col.contact-btn {
+    width: 30%;
+}
+
+/* PARTNER */
+.partner .col-img {
+    width: 55%;
+}
+
+.partner .col-text {
+    margin-left: 5%;
+    width: 40%;
+}
+
+
+/* PARTENR COMPANIES */
+section.companies {
+    background-color: aquamarine;
+}
+
+.companies .col-center {
+    margin: 0;
+    width: 40%;
+}
+.companies .col-half {
+    width: 50%;
+    /* height: 100%; */
+    text-align: center;
+}
+
+
+.col-half img {
+    vertical-align: middle;
+    width: 50%;
 }
