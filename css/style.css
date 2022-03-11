@@ -43,6 +43,10 @@ span.icon {
     margin-bottom: 2em;
 }
 
+.mb-40 {
+    margin-bottom: 4em;
+}
+
 a {
     text-decoration: none;
     display: inline-block;
@@ -61,10 +65,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 section {
-    border: 3px solid lightgreen;
-} */
+    border: 3px solid lightgreen; */
+}
 
 /* BUTTONS */
+
+.btn {
+    margin: 1.5em 0;
+}
 .small-btn {
     padding: .2em 1.2em; 
 }
@@ -86,6 +94,11 @@ a.blue-btn {
     background-color: #0061ff;
 }
 
+a.light-btn {
+    border: 1px solid #000000;
+    color: #000000;
+}
+
 
 .clearfix::after {
     content: "";
@@ -102,6 +115,11 @@ a.blue-btn {
 .col {
     float: left;
     /* border: 2px solid blue; */
+}
+
+.col-side,
+.col-center {
+    width: 30%;
 }
 
 /* HEADER */
@@ -194,9 +212,8 @@ header a {
 
 /* MAIN */
 /* PLANS */
-.col-side,
-.col-center{
-    width:30%;
+.plans .col-side,
+.plans .col-center{
     min-height: 600px;
 }
 
@@ -205,8 +222,8 @@ header a {
 }
 
 
-.join h2 {
-    margin: 5em 0 1em 0;
+ h2 {
+    margin: 4em 0 1em 0;
     font-size: 2.2em;
     
 }
@@ -216,7 +233,8 @@ header a {
 
 }
 
-.join {
+.join,
+.cta {
     font-size: .8em;
 
 }
@@ -265,7 +283,7 @@ h6.plan-target {
     vertical-align: top;
 }
 
-.plan-details a.underline {
+a.underline {
     color: #0061ff;
     text-decoration: underline;
 }
@@ -299,34 +317,47 @@ h6.plan-target {
     width: 35%;
 }
 
-.col.enterprise h4 {
+.col h4 {
+    margin-bottom: 1em;
     font-size: 1.5em;
 }
 
 .col.enterprise h5 {
+    margin-bottom: 1em;
     font-size: 1em;
-    margin: 1em 0;
+    
 }
 
-
-
-
-
-
-
-
-
-
-
 /* PARTNER */
+.partner {
+    margin: 10em 0 6em 0;
+}
 .partner .col-img {
     width: 55%;
 }
 
 .partner .col-text {
-    margin-left: 5%;
-    width: 40%;
+    padding: 2em 0 0 2em;
+    width: 45%;
 }
+
+
+
+/* FEATURES */
+.features {
+    font-size: .8em;
+}
+
+
+/* CTA */
+.cta h2 {
+    max-width: 60%;
+}
+
+
+
+
+
 
 
 
@@ -341,18 +372,31 @@ section.companies {
 
 .companies .col-center {
     margin: 0;
-    width: 40%;
+    width: calc(100% - 80vh);
 }
-.companies .col-half {
+
+.companies .col-side {
+    width: 40vh;
+}
+
+.col .col-half {
+    height: 100%;
     width: 50%;
-    /* height: 100%; */
+    /* border: 3px solid rebeccapurple; */
     text-align: center;
+}
+
+.col-half .company {
+    line-height: 20vh;
+    height: 20vh;
 }
 
 
 .col-half img {
-    vertical-align: middle;
     width: 50%;
+    vertical-align: middle;
+    
+    border: 1px solid red;
 }
 
 /* FOOTER */
