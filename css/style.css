@@ -367,16 +367,29 @@ a.underline {
 
 /* PARTENR COMPANIES */
 section.companies {
-    background-color: aquamarine;
+    background-color: #b9d6f8;
 }
 
 .companies .col-center {
+    padding: 3em;
     margin: 0;
-    width: calc(100% - 80vh);
+    width: calc(100% - 60vh);
+    height: 30vh;
+    font-size: .8em;
+    background-color: #e9e9e9;
+    overflow: scroll;
 }
 
+.companies .col-center img {
+    width: 35%; 
+}
+
+.companies .col-center hr {
+    width: 10%;
+    color: #d6d6d6;
+}
 .companies .col-side {
-    width: 40vh;
+    width: 30vh;
 }
 
 .col .col-half {
@@ -387,17 +400,45 @@ section.companies {
 }
 
 .col-half .company {
-    line-height: 20vh;
-    height: 20vh;
+    line-height: 15vh;
+    height: 15vh;
 }
-
 
 .col-half img {
-    width: 50%;
+    width: 60%;
     vertical-align: middle;
-    
-    border: 1px solid red;
 }
+
+#designit {
+    border: 6px solid #b7f0b7;
+    background-color: #97cf97;
+}
+
+#uf {
+    background-color: #3382b1;
+}
+
+#asu {
+    background-color: #571227;
+}
+
+#topps {
+    background-color: #ff0000;
+}
+
+#wbr {
+    background-color: #b11313;
+}
+
+#lp {
+    background-color: #151479;
+}
+
+#clear-ch {
+    background-color: #fad42c;
+}
+
+
 
 /* FOOTER */
 .footer-frame .col {
