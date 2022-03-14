@@ -23,13 +23,22 @@ ul {
 
 i {
     padding: 0 .4em;
-}
-span.icon {
     line-height: 3em;
-
 }
 
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
 
+.pad-2-0 {
+    padding: 2em 0;
+}
+
+.pad-3-0 {
+    padding: 3em 0;
+}
 
 .mt-08 {
     margin-top: .8em;
@@ -37,6 +46,14 @@ span.icon {
 
 .mt-10 {
     margin-top: 1em;
+}
+
+.mt-20 {
+    margin-top: 2em;
+}
+
+.mb-10 {
+    margin-bottom: 1em;
 }
 
 .mb-20 {
@@ -47,11 +64,6 @@ span.icon {
     margin-bottom: 4em;
 }
 
-a {
-    text-decoration: none;
-    display: inline-block;
-    color: inherit;
-}
 
 /* li {
     border: 2px solid rgb(39, 77, 1);
@@ -69,40 +81,6 @@ section {
     border: 3px solid lightgreen; */
 
 /* } */
-/* BUTTONS */
-.col-btn {
-    padding: .8em 0;
-    width: 100%;
-    text-align: center;  
-}
-
-.small-btn {
-    padding: .2em 1.2em; 
-    line-height: 1.5em;
-}
-
-.blue-btn {
-    color: #ffffff;
-    background-color: #0061ff;
-}
-
-
-.large-btn {
-    padding: .7em 1.4em;
-}
-
-
-
-.light-btn {
-    border: 1px solid #000000;
-    color: #000000;
-    background-color: #ffffff;
-}
-
-.white-btn {
-    color: #000000;
-    background-color: #ffffff;
-}
 
 .clearfix::after {
     content: "";
@@ -126,6 +104,52 @@ section {
     width: 30%;
 }
 
+.border-1px {
+    border: 1px solid #d6d6d6;
+}
+
+.border-bot-1px {
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.border-top-1px {
+    border-top: 1px solid #d6d6d6;
+}
+
+
+/* BUTTONS */
+.col-btn {
+    padding: .8em 0;
+    width: 100%;
+    text-align: center;  
+}
+
+.small-btn {
+    padding: .2em 1.2em; 
+    line-height: 1.5em;
+}
+
+.blue-btn {
+    color: #ffffff;
+    background-color: #0061ff;
+}
+
+.large-btn {
+    padding: .7em 1.4em;
+}
+
+.light-btn {
+    border: 1px solid #000000;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.white-btn {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
 /* HEADER */
 .header {
     position: fixed;
@@ -135,7 +159,6 @@ section {
     height: 80px;
     line-height: 80px;
     background-color: #ffffff;
-    border-bottom: 1px solid #d6d6d6;
 }
 
 .header .col.logo {
@@ -157,7 +180,7 @@ section {
     text-align: right;
 }
 
-.header li {
+.header ul.level-01>li {
     display: inline-block;
     margin-left: 2em;
     font-size: 1.2em;
@@ -248,17 +271,6 @@ section {
     margin-right: 2em;
 }
 
-.border-1 {
-    border: 1px solid #d6d6d6;
-
-}
-
-/* .join,
-.cta {
-    font-size: .8em;
-
-} */
-
 .plans .col {
     margin-bottom: 4em;
     min-height: 900px;
@@ -267,7 +279,6 @@ section {
 
 h6.plan-target {
     padding: .7em 1em;
-    border-bottom: 1px solid #d6d6d6;
     font-size: 1.2em;
     font-weight: 500;
     text-align: center;
@@ -314,7 +325,6 @@ a.underline {
 
 .plan-details span {
     padding-bottom: 2em;
-    border-bottom: 1px solid #d6d6d6;
 }
 
 .plan-details h5 {
@@ -350,7 +360,7 @@ a.underline {
 
 /* PARTNER */
 .partner {
-    margin: 10em 0 6em 0;
+    margin: 10em 0 7em 0;
 }
 .partner .col-img {
     width: 55%;
@@ -375,22 +385,7 @@ a.underline {
     font-size: 2.5em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* PARTENR COMPANIES */
-/* section.companies {
-    
-} */
-
 .companies .col-center {
     padding: 3em;
     margin: 0;
@@ -481,6 +476,12 @@ a.underline {
     font-size: 2.5em;
 }
 
+/* FAQ */
+
+.faq h3 {
+    font-size: 2em;
+}
+
 .faq li h4 {
     display: inline-block;
     width: 97%;
@@ -488,7 +489,6 @@ a.underline {
 
 .faq li .dtri {
     width: 3%;
-    
     text-align: right;
 }
 
@@ -497,18 +497,9 @@ a.underline {
     width: 97%;
 }
 
-#faqt-01:hover + #faqp-01 {
-    display: inline-block;
-}
-
-#faqt-02:hover + #faqp-02 {
-    display: inline-block;
-}
-
-#faqt-03:hover + #faqp-03 {
-    display: inline-block;
-}
-
+#faqt-01:hover + #faqp-01,
+#faqt-02:hover + #faqp-02,
+#faqt-03:hover + #faqp-03,
 #faqt-04:hover + #faqp-04 {
     display: inline-block;
 }
@@ -519,20 +510,19 @@ footer {
     background-color: #000000;
 }
 
-.footer-frame .col {
-    margin-right: 2em;
-    width: calc(20% - 2em);
-}
-
 footer li a  {
     line-height: 2em;
     font-size: .9em;
     font-weight: 400;
 }
 
+.footer-frame .col {
+    margin-right: 2em;
+    width: calc(20% - 2em);
+}
+
 .footer-frame .lang-select {
     display: inline-block;
     font-size: .8em;
-    border-top: 1px solid #b8b8b8;
     color: #b8b8b8;
 }
