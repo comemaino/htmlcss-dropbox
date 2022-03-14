@@ -52,7 +52,9 @@
                             <a class="large-btn blue-btn" href="">Inizia la tua prova gratuita</a>
                             <div class="mt-10">Annulla in qualsiasi momento</div>
                         </div>
-                        <div><a class="btn-arrow" href=""><i class="fas fa-arrow-down"></i></a></div>
+                        <div>
+                            <a href="#plans-page"><i class="fas fa-arrow-down"></i></a>
+                        </div>
                     </div>
                     <div class="col jumbo-img-frame">
                         <img src="img/jumbo.png" alt="" class="jumbo-img">
@@ -68,13 +70,15 @@
         <section>
             <div class="container">
 <!-- PLANS -->
-                <section class="join">
+                <section class="plans" id="plans-page">
                     <h2>Trova il piano Dropbox Business che fa per te</h2>
                     <div class="billing mb-20">
-                        <span>Fatturazione mensile</span>
-                        <span>Fatturazione annuale</span>
+                        <input type="radio" name="billing" id="monthly"></input>
+                        <label for="monthly">Fatturazione mensile</label>
+                        <input type="radio" name="billing" id="yearly"></input>
+                        <label for="yearly">Fatturazione annuale</label>
                     </div>
-                    <div class="clearfix plans">
+                    <div class="clearfix">
 <!-- COL-LEFT -->
                         <div class="col col-side border-1px">
                             <h6 class="plan-target border-bot-1px"><i class="far fa-user"></i>Singolo</h6>
@@ -151,7 +155,8 @@
                                 </ul>
                             </div>
                         </div>
-<!-- /COL-RIGHT -->                         
+<!-- /COL-RIGHT -->
+<!-- ENTERPRISE -->
                     </div>
                     <div class="border-1px">
                         <h6 class="plan-target border-bot-1px"><i class="far fa-building"></i>Team</h6>
@@ -166,6 +171,7 @@
                             </div>
                         </div>
                     </div>
+<!-- /ENTERPRISE -->
 <!-- FIND A PARTNER -->
                     <section class="clearfix partner">
                         <div class="col col-img">
@@ -242,7 +248,7 @@
                 </div>
                 <div class="col col-center">
                     <div>
-                        <img class="mb-20" src="img/designit-bk.svg" alt="designit">
+                        <img class="pad-2-0" src="img/designit-bk.svg" alt="designit">
                         <hr class="mb-20">
                         <p>"I membri del nostro team lavorano costantementi in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox.
                             <br><br><br>Morten Thomsen, Global IT Lead 
