@@ -171,11 +171,11 @@ section {
     vertical-align: middle;
 }
 
-.header .col.links01 {
+.header .col.links-01 {
     width: 41%;
 }
 
-.header .col.links02 {
+.header .col.links-02 {
     padding-right: 1em;
     width: 50%;
     text-align: right;
@@ -189,14 +189,23 @@ section {
 
 }
 
-.header .links01 li a:hover {
-    display: inline-block;
+.header .links-01 .level-01>li:hover,
+.header .links-02 .level-01>li:not(:last-child):hover {
     border-bottom: 2px solid #414141;
 }
 
-.header .links02 li:not(:last-child) a:hover {
-    display: inline-block;
-    border-bottom: 2px solid #414141;
+ul.level-02 {
+    display: none;
+    position: absolute;
+    line-height: 2.5em;
+    text-align: left;
+    padding: 0 7em 0 1em;
+    font-weight: 400;
+    background-color: #ffffff;
+}
+
+#nav-contacts:hover  ul.level-02 {
+    display: block;
 }
 
 /* JUMBOTRON */
