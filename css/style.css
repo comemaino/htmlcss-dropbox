@@ -67,35 +67,31 @@ h1,h2,h3,h4,h5,h6 {
 
 section {
     border: 3px solid lightgreen; */
-}
 
+/* } */
 /* BUTTONS */
-
-/* .btn {
-    margin: 1.5em 0;
-} */
-
-
-.small-btn {
-    line-height: 2em;
-    padding: .2em 1.2em; 
-}
-
-.large-btn {
-    padding: .7em 1.4em;
-    /* margin: 1.5em 0; */
-}
-
 .col-btn {
     padding: .8em 0;
     width: 100%;
     text-align: center;  
 }
 
+.small-btn {
+    padding: .2em 1.2em; 
+    line-height: 1.5em;
+}
+
 .blue-btn {
     color: #ffffff;
     background-color: #0061ff;
 }
+
+
+.large-btn {
+    padding: .7em 1.4em;
+}
+
+
 
 .light-btn {
     border: 1px solid #000000;
@@ -164,10 +160,12 @@ section {
 .header li {
     display: inline-block;
     margin-left: 2em;
-    line-height: 2em;
     font-size: 1.2em;
     line-height: 78px;
+
 }
+
+
 
 .header .links01 li a:hover {
     display: inline-block;
@@ -389,9 +387,9 @@ a.underline {
 
 
 /* PARTENR COMPANIES */
-section.companies {
+/* section.companies {
     
-}
+} */
 
 .companies .col-center {
     padding: 3em;
