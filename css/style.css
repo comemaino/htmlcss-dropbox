@@ -392,8 +392,8 @@ a.underline {
 .companies .col-center {
     padding: 3em;
     margin: 0;
-    width: calc(100% - 64vh);
-    height: 32vh;
+    width: calc(100% - 60vw);
+    height: 30vw;
     background-color: #e9e9e9;
     overflow-y: auto;
 }
@@ -408,7 +408,7 @@ a.underline {
 }
 
 .companies .col-side {
-    width: 32vh;
+    width: 30vw;
 }
 
 .col .col-half {
@@ -418,8 +418,8 @@ a.underline {
 }
 
 .col-half .company {
-    line-height: 16vh;
-    height: 16vh;
+    line-height: 15vw;
+    height: 15vw;
 }
 
 .col-half img {
